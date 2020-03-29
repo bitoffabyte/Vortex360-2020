@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoboVITics - The official robotics club of VIT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'CSS/style.css') }}">
    </head>
 <body>
     <a href="#navigation" class="nav-trigger">
@@ -43,7 +43,7 @@
       <div class="main_card">
         <div class="card_right">
           <div class="img_container">
-            <img class="imag img-fluid robowars" src="CSS/Images/robowars_pic.png" alt="">
+            <img class="imag img-fluid robowars" src="{{ url_for('static', filename = 'CSS/Images/robowars_pic.png') }}" alt="">
           </div>
         </div>
         <div class="card_left">
@@ -58,7 +58,7 @@
       <div class="main_card">
         <div class="card_right">
           <div class="img_container">
-              <img class=""src="CSS/Images/HOR.jpeg" alt="">
+              <img class=""src="{{ url_for('static', filename = 'CSS/Images/HOR.jpeg') }}" alt="">
           </div>
         </div>
         <div class="card_left">
@@ -72,7 +72,7 @@
       <div class="main_card" >    
         <div class="card_right">
           <div class="img_container">
-            <img class="imag img-fluid"src="CSS/Images/MD.png" alt="">
+            <img class="imag img-fluid"src="{{ url_for('static', filename = 'CSS/Images/MD.png') }}" alt="">
           </div>
         </div>
         <div class="card_left">
@@ -86,7 +86,7 @@
      <div class="main_card">
         <div class="card_right">
           <div class="img_container">
-              <img class=""src="CSS/Images/cosmos_logo_sharp.png" alt="">
+              <img class=""src="{{ url_for('static', filename = 'CSS/Images/cosmos_logo_sharp.png') }}" alt="">
           </div>
         </div>
                <div class="main_card>
@@ -250,7 +250,7 @@
               <div class="main_card">
                 <div class="card_right">
                   <div class="img_container">
-                      <img class=""src="CSS/Images/kartavya.png" alt="">
+                      <img class=""src="{{url_for('static', filename='CSS/Images/kartavya.png')}}" alt="">
                   </div>
                 </div>
                 <div class="card_left">
@@ -279,7 +279,7 @@
         </pre>
         <div class="wrapper aboutuscard">
           <div class="">
-          <img src="CSS/Images/about-us.jpg" alt="" class="abtimg"></div>
+          <img src="{{url_for('static', filename='CSS/Images/about-us.jpg')}}" alt="" class="abtimg"></div>
               <div class="card_datails about-det">
                 <p class="disc"> We are a group of engineers with an inclination towards Robotics. What started out as a couple of nobodys over a decade ago, is now the official Robotics club of VIT, Vellore. We aim to spread the knowledge of Robotics to the masses. We work on some jaw-dropping projects, our club incubates teams that participate in various competitions across the globe. All RoboVITians strive to live up to the legacy set by our predecessors with pride.
                 </p> 
@@ -378,7 +378,7 @@
     </ul>
     <h1 style="text-align: center; color: white;">Contact Us</h1>
     <p style="font-weight: 600;font-size: medium;">Email : robovitics@vit.ac.in</p>
-    <p style=" text-align:right; margin-right: 20px;" ><img src="CSS/Images/with_love.png" alt=""></p>
+    <p style=" text-align:right; margin-right: 20px;" ><img src="{{url_for('static', filename='CSS/Images/with_love.png')}}" alt=""></p>
 </div>
 
 
