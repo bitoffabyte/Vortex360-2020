@@ -1,3 +1,3 @@
 # RoboVITics Webpage
-A static Webpage without using any libraries for RoboVITics - The official robotics club of VIT <br>
-https://robovitics.in/
+Time for an upgrade <br>
+https://robowebpage.herokuapp.com/
