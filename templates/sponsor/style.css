@@ -15,9 +15,12 @@ body{
     /* height: 150%; */
     float: initial;
 }
-img{
+.image{
     width: 100%;
     height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1{
     font-size: 400%;
@@ -30,5 +33,9 @@ h1{
     h1{
         font-size: 200%;
     
+    }
+    .image{
+        width: 50%;
+        height:auto;
     }
 }
