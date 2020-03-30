@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -10,28 +11,30 @@
          position:relative; 
          top:0;
          left:0; 
-         z-index:1" id="particles-js">
+         z-index:0" id="particles-js">
       </div>
       
       <div style = "background-color:transparent; 
-         width:104vw; 
+         width:100vw; 
          position:relative; 
-         top:-400vh; 
+         top:-500vh; 
          left:0; 
-         
          z-index:2;">
-         <nav class="nav">
+         <nav class="nav" style="text-align: right;">
             <div class="container">
                 <div class="logo">
                                 <pre>
                                 </pre>
                 </div>
                 <div id="mainListDiv" class="main_list">
-                    <ul class="navlinks">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="navlinks" style="font-weight: 500;">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Domains</a></li>
+                        <li><a href="#">Timeline</a></li>
+                        <li><a href="#">Judges</a></li>
+                        <li><a href="#">Rules & FAQs</a></li>
+                        <li><a href="#reach">Reach Us</a></li>
+
                     </ul>
                 </div>
                 <span class="navTrigger">
@@ -41,16 +44,77 @@
                 </span>
             </div>
         </nav>
-    
-      
-        </section>
-        <!--CODE HERE ONLY FOR THE CONTENTS OF THE PAGE-->
+      </div>
+      <!--CODE HERE ONLY FOR THE CONTENTS OF THE PAGE-->
+      <div style = "background-color:transparent; 
+      width:100vw; 
+      position:relative; 
+      top:-480vh; 
+      z-index:1;
+      left:380;" class="myDiv"><img src="CSS/Images/Vortex_360_logo_white.png" >
+      </div>
+      <div style = "background-color:transparent; 
+      width:100vw; 
+      position:relative; 
+      top:-470vh; 
+      z-index:1;
+      font-weight: bolder;" id="timer">
+      </div>
+      <div style = "background-color:transparent; 
+      width:100vw; 
+      position:relative; 
+      top:-450vh; 
+      z-index:1;
+      font-weight: bolder;">
+      <pre id="about">
 
-        <!--CODE HERE ONLY FOR THE CONTENTS OF THE PAGE-->
+
+
+
+
+
+
+
+      </pre>
+      <p  style="color: whitesmoke; font-size: 45px; text-align: center; margin: 10px;"> VORTEX 360</p>
       </div>
       
+      <div style = "background-color:rgba(0,0,0,0.4); 
+      display: flex;
+      width:100vw; 
+      position:relative; 
+      top:-448vh; 
+      z-index:1;">
+        <p style="color: whitesmoke; font-size: 25px; text-align: center; margin: 10px;"> Vortex 360 is a 30 days online CAD modelling hack organised by RoboVITics, the Robotics club of VIT, and powered by AutoDesk.This hack aims to provide a platform where you can unwrap your skills and discover the extents of your abilities.RoboVITics team cordially invites you to be a part of this endeavour to showcase and enrich your skills, grab the opportunity and unleash the vortex within.</p>
+      </div>
+      <div style = "
+      width:100vw; 
+      position:relative; 
+      z-index:1;
+      font-size:17px">
+       <div class="footer-social-icons qwerty">
+         <p id="reach"></p>
+        <pre>
+      
+        </pre>
+          <h1 style="text-align:center; color:white; ">Social Media</h1>
+          <ul class="social-icons" style="text-align: center;">
+              <li><a href="https://www.facebook.com/robovitics/" target="_blank" class="social-icon"> <i class="fa fa-facebook fa-2x text-primary mx-3"></i></a></li>
+              <li><a href="https://instagram.com/robovitics?igshid=1nuojwifavrty" target="_blank" class="social-icon"> <i class="fa fa-instagram fa-2x text-primary mx-3"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/robovitics/about/" target="_blank" class="social-icon"> <i class="fa fa-linkedin fa-2x text-primary mx-3"></i></a></li>
+              <li><a href="https://github.com/RoboVITics" target="_blank" class="social-icon"> <i class="fa fa-github fa-2x text-primary mx-3"></i></a></li>
+              <li><a href="https://www.twitter.com/robo_vit" target="_blank" class="social-icon"> <i class="fa fa-twitter fa-2x text-primary mx-3"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCFiwOI-W5b06NweratR-RdA" target="_blank" class="social-icon"> <i class="fa fa-youtube fa-2x text-primary mx-3"></i></a></li>
+          </ul>
+          <h1 style="text-align: center; color: white;">Contact Us</h1>
+          <p style="font-weight: 600;font-size: medium;">Email : roboviticsvitvellore@vit.ac.in</p>
+          <p style=" text-align:right; margin-right: 20px;" ><img src="CSS/Images/with_love.png" alt=""></p>
+      </div>
+      </div>
+     <!--CODE HERE ONLY FOR THE CONTENTS OF THE PAGE-->
+      
       <!--NAVBAR JS-->
-      <!-- Jquery needed -->
+      
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="js/scripts.js"></script>
   
@@ -81,7 +145,7 @@
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 80,
+      "value": 40,
       "density": {
         "enable": true,
         "value_area": 800
@@ -134,7 +198,7 @@ particlesJS("particles-js", {
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 3,
       "direction": "none",
       "random": false,
       "straight": false,
@@ -188,10 +252,35 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-
-
-
     </script>
+    <!--TIMER JS-->
+    <script>
+      function updateTimer() {
+        future  = Date.parse("June 11, 2020 11:30:00");
+        now     = new Date();
+        diff    = future - now;
+      
+        days  = Math.floor( diff / (1000*60*60*24) );
+        hours = Math.floor( diff / (1000*60*60) );
+        mins  = Math.floor( diff / (1000*60) );
+        secs  = Math.floor( diff / 1000 );
+      
+        d = days;
+        h = hours - days  * 24;
+        m = mins  - hours * 60;
+        s = secs  - mins  * 60;
+      
+        document.getElementById("timer")
+          .innerHTML =
+            '<div>' + d + '<span>days</span></div>' +
+            '<div>' + h + '<span>hours</span></div>' +
+            '<div>' + m + '<span>minutes</span></div>' +
+            '<div>' + s + '<span>seconds</span></div>' ;
+           
+      }
+      setInterval('updateTimer()', 1000 );
+      
+          </script>
 
 </body>
 </html>
