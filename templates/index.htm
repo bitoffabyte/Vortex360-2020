@@ -4,9 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="../static/CSS/style.css">
 </head>
-<body>
+<body >
     <div style = "
          position:relative; 
          top:0;
@@ -17,9 +17,11 @@
       <div style = "background-color:transparent; 
          width:100vw; 
          position:relative; 
-         top:-500vh; 
+         top:-400vh; 
          left:0; 
-         z-index:2;">
+         z-index:2;
+         margin-bottom:-55vh;
+         ">
          <nav class="nav" style="text-align: right;">
             <div class="container">
                 <div class="logo">
@@ -31,7 +33,7 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#">Domains</a></li>
                         <li><a href="#">Timeline</a></li>
-                        <li><a href="#">Judges</a></li>
+                        <li><a href="#Judges">Judges</a></li>
                         <li><a href="#">Rules & FAQs</a></li>
                         <li><a href="#reach">Reach Us</a></li>
 
@@ -46,24 +48,30 @@
         </nav>
       </div>
       <!--CODE HERE ONLY FOR THE CONTENTS OF THE PAGE-->
+      <!--VORTEX IMAGE-->
       <div style = "background-color:transparent; 
       width:100vw; 
       position:relative; 
-      top:-480vh; 
+      top:-380vh; 
+      margin-bottom:-55vh;
       z-index:1;
-      left:380;" class="myDiv"><img src="CSS/Images/Vortex_360_logo_white.png" >
+      left:380;" class="myDiv"><img src="../static/CSS/Images/Vortex_360_logo_white.png" >
       </div>
+      <!--COUNTDOWN-->
       <div style = "background-color:transparent; 
       width:100vw; 
       position:relative; 
-      top:-470vh; 
+      top:-350vh;
+      margin-bottom:-55vh;
       z-index:1;
       font-weight: bolder;" id="timer">
       </div>
+      <!--ABOUT THE HACK-->
       <div style = "background-color:transparent; 
       width:100vw; 
       position:relative; 
-      top:-450vh; 
+      top: -300vh;
+      margin-bottom:-55vh;
       z-index:1;
       font-weight: bolder;">
       <pre id="about">
@@ -83,10 +91,82 @@
       display: flex;
       width:100vw; 
       position:relative; 
-      top:-448vh; 
+      top: -270vh;
+      margin-bottom:-55vh;
       z-index:1;">
         <p style="color: whitesmoke; font-size: 25px; text-align: center; margin: 10px;"> Vortex 360 is a 30 days online CAD modelling hack organised by RoboVITics, the Robotics club of VIT, and powered by AutoDesk.This hack aims to provide a platform where you can unwrap your skills and discover the extents of your abilities.RoboVITics team cordially invites you to be a part of this endeavour to showcase and enrich your skills, grab the opportunity and unleash the vortex within.</p>
       </div>
+      <!--JUDGES-->
+      <div style = "background-color:transparent; 
+      width:100vw; 
+      position:relative; 
+      top: -220vh;
+      margin-bottom:-55vh;
+      z-index:1;
+      font-weight: bolder;">
+      <pre id="Judges">
+
+
+
+
+
+
+
+      </pre>
+      <p  style="color: whitesmoke; font-size: 45px; text-align: center; margin: 10px;"> OUR JUDGES</p>
+      </div>
+
+      <div style = "background: transparent;
+      display: flex;
+      width:100vw; 
+      position:relative; 
+      top: -200vh;
+      margin-bottom:-55vh;
+      z-index:1;">
+      <div class="gallery-box-container" style="margin: 65px;">
+        <a href="" class="gallery-box">
+            <span class="gallery-box__img-container">
+                <img src="" alt="" class="gallery-box__img">
+            </span>
+            <span class="gallery-box__text-wrapper">
+                <span class="gallery-box__text" >Mr. Ramesh Pudale <br>MFG Account Manager <br>Autodesk India
+                </span>
+            </span>
+        </a>
+        <a href="" class="gallery-box">
+            <span class="gallery-box__img-container">
+                <img src="" alt="" class="gallery-box__img">
+            </span>
+            <span class="gallery-box__text-wrapper">
+                <span class="gallery-box__text">Mr. Anand Pujari <br>Education Account Manager <br>Autodesk India
+                </span>
+            </span>
+        </a>
+    
+        <a href="" class="gallery-box">
+            <span class="gallery-box__img-container">
+                <img src="
+                " alt="" class="gallery-box__img">
+            </span>
+            <span class="gallery-box__text-wrapper">
+                <span class="gallery-box__text" style="font-weight: 500;">Mr. Ayush Gupta <br>Business Operations Associate <br>Zs Associates
+                </span>
+            </span>
+        </a>
+    
+        <a href="" class="gallery-box">
+            <span class="gallery-box__img-container">
+                <img src="" alt="" class="gallery-box__img">
+            </span>
+            <span class="gallery-box__text-wrapper">
+                <span class="gallery-box__text">Mr. Ivan Das <br>Data Analyst- Sell Side Core, Myntra <br>CEO Celebrify
+                </span>
+            </span>	
+        </a>
+    </div>
+       
+      </div>
+      <!--SOCIAL-->
       <div style = "
       width:100vw; 
       position:relative; 
@@ -94,9 +174,10 @@
       font-size:17px">
        <div class="footer-social-icons qwerty">
          <p id="reach"></p>
-        <pre>
-      
-        </pre>
+         <pre>
+
+
+         </pre>
           <h1 style="text-align:center; color:white; ">Social Media</h1>
           <ul class="social-icons" style="text-align: center;">
               <li><a href="https://www.facebook.com/robovitics/" target="_blank" class="social-icon"> <i class="fa fa-facebook fa-2x text-primary mx-3"></i></a></li>
@@ -108,7 +189,7 @@
           </ul>
           <h1 style="text-align: center; color: white;">Contact Us</h1>
           <p style="font-weight: 600;font-size: medium;">Email : roboviticsvitvellore@vit.ac.in</p>
-          <p style=" text-align:right; margin-right: 20px;" ><img src="CSS/Images/with_love.png" alt=""></p>
+          <p style=" text-align:right; margin-right: 20px;" ><img src="../static/CSS/Images/with_love.png" alt=""></p>
       </div>
       </div>
      <!--CODE HERE ONLY FOR THE CONTENTS OF THE PAGE-->
