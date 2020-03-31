@@ -34,7 +34,7 @@ body {
   #particles-js {
     position: absolute;
     width: 100vw;
-    height: 920vh;
+    height: 1120vh;
     background-color: black;
     background-image: url("");
     background-repeat: no-repeat;
@@ -42,7 +42,14 @@ body {
    /* background-position: 50% 50%;*/
   }
   
-
+  @media screen and (max-width: 500px)
+  {
+      #particles-js
+      {
+        height: 1700vh;
+      }
+   
+  }
 
 
 
@@ -142,7 +149,7 @@ body {
         margin-left: 15px;
     }
     .nav div.main_list {
-        width: 60%;
+        width: 70%;
         height: 0;
         overflow: hidden;
     }
@@ -595,7 +602,7 @@ body {
     display: block;
     
     flex: 0 1 calc(25% - 15px);
-    height: 450px;
+    height: 500px;
     background: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     
@@ -604,12 +611,14 @@ body {
 }
 @media screen and (max-width: 1200px) {
     .gallery-box {
+        height: 500px;
         flex: 0 1 calc(50% - 15px);
         margin: 15px 0;
    }
 }
 @media screen and (max-width: 640px) {
     .gallery-box {
+        height: 500px;
         flex: 0 1 calc(100% - 15px);
    }
 }
@@ -848,12 +857,12 @@ ul.social-icons {
     flex-direction: row;
     justify-content: center;
     align-items: center;
- position: relative;
+ 
     margin: 0 auto;
 }
 .sponsorc{
     margin:5%;
-    /* height: 150%; */
+     height: 150%; 
     float: initial;
 }
 .image{
@@ -1046,12 +1055,12 @@ h4
 	margin: 20px 0;
     transition: 0.3s ease;
     max-width: 400px;
-    
+
 }
 
 .faq.active {
 	background-color:rgba(67, 76, 82, 0.37);
-	
+
 }
 
 .faq.active::after, .faq.active::before {
@@ -1140,7 +1149,7 @@ h4
     /* margin: 0 auto; */
     justify-content: center;
     justify-items: center;
-     
+
  }
 
  @media screen and (max-width: 767px)
@@ -1149,16 +1158,4 @@ h4
      {
          flex-direction: column;
      }
- }
- /* rules */
- .btn{
-    background-color: #4169e1; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 20px;
- }
+ } 
