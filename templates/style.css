@@ -890,7 +890,11 @@ ul.social-icons {
 }
 
 /* Timeline */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+
+h4
+{
+    text-align: center;
+}
 .timeline{
   position:relative;
   margin:50px auto;
@@ -946,19 +950,21 @@ ul.social-icons {
 {
   content:'';
   position:absolute;
-  width:1px;
-  height:1px;
+  width:10px;
+  height:10px;
   top:24px;
   left:-4px;
   background:rgba(3, 168, 245,1);
   border-radius:50%;
   box-shadow:0 0 0 3px rgba(3, 168, 245,0.2);
 }
+
 .timeline ul li h3{
   padding:0;
   margin:0;
   color:rgba(3, 168, 245,1);
   font-weight:600;
+  font-size: 25px;
 }
 .timeline ul li p{
   margin:10px 0 0;
@@ -973,27 +979,29 @@ ul.social-icons {
 {
   position:absolute;
   top:12px;
-  right:-120px;
-  margin:0;
-  padding:8px 16px;
-  background:rgba(3, 168, 245,1);
-  color:#fff;
-  border-radius:18px;
-  box-shadow:0 0 0 3px rgba(3, 168, 245,0.3);;
-}
-.timeline ul li:nth-child(even) .time
-{
-  position:absolute;
-  top:12px;
-  left:-120px;
+  right:-170px;
   margin:0;
   padding:8px 16px;
   background:rgba(3, 168, 245,1);
   color:#fff;
   border-radius:18px;
   box-shadow:0 0 0 3px rgba(3, 168, 245,0.3);
+  font-size: 25px;
+  
 }
-
+.timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-170px;
+  margin:0;
+  padding:8px 16px;
+  background:rgba(3, 168, 245,1);
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px rgba(3, 168, 245,0.3);
+  font-size: 25px;
+}
 @media(max-width:1000px)
 {
   .timeline{
@@ -1042,7 +1050,7 @@ ul.social-icons {
     padding-bottom: 10vh;
 }
 .accordion {
-background-color: rgb(0, 44, 240);
+background-color: #1512ac;
 color: rgb(255, 255, 255);
 cursor: pointer;
 padding: 18px;
@@ -1052,24 +1060,22 @@ text-align: left;
 outline: none;
 font-size: 15px;
 transition: 1s;
-margin: .5%;
-border-radius: 10px;
+margin: .25%;
 }
 
 .active, .accordion:hover {
 background-color: #101777; 
 color: white;
 }
+
 .panel {
 padding: 0 18px;
 display: none;
 font-size: 15px;
-background:rgb(142, 187, 255);
-color: black;
-overflow: hidden;
-margin: .5%;
-transition: 1s;
-border-radius: 10px;
+background:rgb(0, 44, 240);
 
+overflow: hidden;
+margin: .25%;
+transition: 1s;
 
 }
