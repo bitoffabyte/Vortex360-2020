@@ -1,4 +1,45 @@
-/*css for particles*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+body {
+    margin: 0;
+    overflow-x: hidden;  
+    background-color: black;
+    
+  }
+  .card-content{
+      z-index:0;
+      position: relative;
+  }
+  html{
+    scroll-behavior: smooth ;  
+    transition: ease .3s;
+    white-space: wrap;
+  }
+ 
+  
+  canvas {
+    display: block;
+  }
+  
+  /* ---- particles.js container ---- */
+  
+  #particles-js {
+    position: absolute;
+    width: 100vw;
+    height: 400vh;
+    background-color: black;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+   /* background-position: 50% 50%;*/
+  }
+  
+
+
+
+
+
+  /*css for particles*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 body {
@@ -107,7 +148,7 @@ body {
         margin-left: 15px;
     }
     .nav div.main_list {
-        width: 50%;
+        width: 70%;
         height: 0;
         overflow: hidden;
     }
@@ -120,7 +161,7 @@ body {
         width: 100%;
         height: 100vh;
         right: 0%;
-        bottom: 0;
+        /* bottom: 0; */
         background-color: #111;
         /*same background color of navbar*/
         background-position: center top;
@@ -416,10 +457,13 @@ body {
     
   }
   .front-contx{
-    margin: 10%;
+    margin-left: 10%;
+    margin-top: 10%;
     height:100%;
     display: flex;
     flex-direction: column;
+    position: relative;
+
   }
   @media only screen and (max-width: 600px) {
     .front-contx{
@@ -445,7 +489,6 @@ body {
 /* domains */
 
 .cardBox {
-    /* float: left; */
     font-size: 1.2em;
     margin: 1% 0 0 1%;
     perspective: 800px;
@@ -456,15 +499,17 @@ body {
     transition: 1s;
     transform: rotateY( 180deg);
   }
-  
+  /*changes*/
   .card {
     background:rgb(0, 44, 187);
     cursor: default;
-    height: 200px;
+    height: 300px;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
-    width: 70%;
+    width: 80%;
+    border-radius: 30px;
   }
+  
   .card .front{
     backface-visibility: hidden;
     box-sizing: border-box;
@@ -483,7 +528,7 @@ body {
     box-sizing: border-box;
     color: white;
     display: block;
-    /* font-size: 1.2em; */
+    font-size: 150%;
     height: 100%;
     padding: 0.8em;
     position: absolute;
@@ -522,19 +567,19 @@ body {
       width: 46%;
     }
     .card {
-      height: 400px;
+      height: 500px;
     }
     .cardBox:last-child {
       margin-bottom: 3%;
     }
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1300px) {
     .cardBox {
       width: 94.5%;
     }
     .card {
-      height: 200px;
+      height: 400px;
     }
   }
 /* Judge cards */
@@ -673,6 +718,8 @@ ul {
     list-style: none;
 }
 .footer-social-icons {
+    position: relative;
+
     width:auto;
     display:block;
     margin: 0 auto;
