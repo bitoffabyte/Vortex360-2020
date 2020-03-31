@@ -510,7 +510,7 @@ body {
   }
   /*changes*/
   .card {
-    background:rgb(3, 168, 245);
+    background:rgba(67, 76, 82, 0.37);
     cursor: default;
     height: 350px;
     transform-style: preserve-3d;
