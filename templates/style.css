@@ -753,14 +753,14 @@ ul.social-icons {
     text-decoration: none;
 }
 .fa-facebook {
-    padding:8px 12px;
+    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
     background-color: #322f30;
-    border-radius: 350px;
+    border-radius: 370px;
 }
 .fa-facebook:hover {
     background-color: #3d5b99;
@@ -780,7 +780,7 @@ ul.social-icons {
 }
 
 .fa-youtube {
-    padding:10px 14px;
+    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -793,7 +793,7 @@ ul.social-icons {
     background-color: #e64a41;
 }
 .fa-linkedin {
-    padding:10px 14px;
+    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -819,7 +819,7 @@ ul.social-icons {
     background-color: #5a32a3;
 }
 .fa-instagram {
-    padding:10px 14px;
+    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
