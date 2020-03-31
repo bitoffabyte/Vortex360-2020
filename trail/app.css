@@ -22,8 +22,8 @@ body {
   }
  
   .reg{
-    padding-left: 30%;
-    width: 20%;
+    padding-left: 28%;
+    width: 25%;
 }
   canvas {
     display: block;
@@ -1159,3 +1159,12 @@ h4
          flex-direction: column;
      }
  } 
+.rules-btn{
+    margin-left: 41%;
+}
+@media screen and (max-width: 767px)
+{
+    .rules-btn{
+        margin-left: 15%;
+    }
+} 
