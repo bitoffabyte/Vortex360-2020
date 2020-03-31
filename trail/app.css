@@ -26,7 +26,7 @@ body {
   #particles-js {
     position: absolute;
     width: 100vw;
-    height: 400vh;
+    height: 450vh;
     background-color: black;
     background-image: url("");
     background-repeat: no-repeat;
@@ -722,13 +722,12 @@ ul {
 }
 .footer-social-icons {
     position: relative;
-
     width:auto;
     display:block;
     margin: 0 auto;
     background: #322f3000;
     color: #fff;
-    height: 320px;
+    height: 250px;
 text-align: center;
 }
 .social-icon {
@@ -843,5 +842,44 @@ ul.social-icons {
     background: rgb(3, 168, 245);/*change this for the color of the scroll bar*/
     border-radius: 1px;
   }
-  /* Trial */
-  
+    /* Sponsor */
+    .sponsors{
+      background: transparent;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    position: relative;
+     
+        margin: 0 auto;
+    }
+    .sponsorc{
+        margin:5%;
+        /* height: 150%; */
+        float: initial;
+    }
+    .image{
+        width: 100%;
+        height:auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sponsorh1{
+        font-size: 400%;
+    
+    }
+    @media only screen and (max-width: 1000px) {
+        .sponsors{
+            flex-direction: column;
+        }  
+        h1{
+            font-size: 200%;
+        
+        }
+        .image{
+            width: 90%;
+            height:auto;
+        }
+    }
