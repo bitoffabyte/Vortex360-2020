@@ -507,7 +507,7 @@ body {
   .card {
     background:rgb(0, 44, 187);
     cursor: default;
-    height: 300px;
+    height: 350px;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
     width: 80%;
