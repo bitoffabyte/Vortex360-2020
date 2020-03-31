@@ -457,7 +457,8 @@ body {
     
   }
   .front-contx{
-    margin: 10%;
+    margin-left: 10%;
+    margin-top: 10%;
     height:100%;
     display: flex;
     flex-direction: column;
@@ -498,14 +499,15 @@ body {
     transition: 1s;
     transform: rotateY( 180deg);
   }
-  
+  /*changes*/
   .card {
     background:rgb(0, 44, 187);
     cursor: default;
-    height: 200px;
+    height: 300px;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
-    width: 70%;
+    width: 80%;
+    border-radius: 30px;
   }
   
   .card .front{
@@ -526,7 +528,7 @@ body {
     box-sizing: border-box;
     color: white;
     display: block;
-    /* font-size: 1.2em; */
+    font-size: 150%;
     height: 100%;
     padding: 0.8em;
     position: absolute;
@@ -565,19 +567,19 @@ body {
       width: 46%;
     }
     .card {
-      height: 400px;
+      height: 500px;
     }
     .cardBox:last-child {
       margin-bottom: 3%;
     }
   }
   
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1300px) {
     .cardBox {
       width: 94.5%;
     }
     .card {
-      height: 200px;
+      height: 400px;
     }
   }
 /* Judge cards */
