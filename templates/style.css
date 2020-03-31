@@ -458,12 +458,12 @@ body {
 
   .logomain{
     width: 50%;
-    padding-left: 20%;
+    padding-left: 14.5%;
 
     
   }
   .front-contx{
-    margin-left: 10%;
+    margin-left: 20%;
     margin-top: 10%;
     height:100%;
     display: flex;
@@ -510,7 +510,7 @@ body {
   }
   /*changes*/
   .card {
-    background:rgb(0, 44, 187);
+    background:rgb(3, 168, 245);
     cursor: default;
     height: 350px;
     transform-style: preserve-3d;
@@ -524,9 +524,9 @@ body {
     box-sizing: border-box;
     color: white;
     display: block;
-    /* font-size: 1.2em; */
+    font-size: 4em;
     height: 100%;
-    padding-top: 20%;
+    padding-top: 35%;
     font-size: x-large;
     position: absolute;
     text-align: center;
