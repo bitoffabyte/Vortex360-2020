@@ -31,7 +31,7 @@ body {
   #particles-js {
     position: absolute;
     width: 100vw;
-    height: 400vh;
+    height: 900vh;
     background-color: black;
     background-image: url("");
     background-repeat: no-repeat;
@@ -463,7 +463,7 @@ body {
     
   }
   .front-contx{
-    margin-left: 20%;
+    margin-left: 17%;
     margin-top: 10%;
     height:100%;
     display: flex;
@@ -856,7 +856,7 @@ ul.social-icons {
     flex-direction: row;
     justify-content: center;
     align-items: center;
- 
+    position: relative;
     margin: 0 auto;
 }
 .sponsorc{
