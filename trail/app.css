@@ -18,13 +18,13 @@ body {
   html{
     scroll-behavior: smooth ;  
     transition: ease .3s;
-    white-space: wrap;
+
   }
  
   .reg{
-      padding-left: 30%;
-      width: 20%;
-  }
+    padding-left: 30%;
+    width: 20%;
+}
   canvas {
     display: block;
   }
@@ -34,7 +34,7 @@ body {
   #particles-js {
     position: absolute;
     width: 100vw;
-    height: 900vh;
+    height: 920vh;
     background-color: black;
     background-image: url("");
     background-repeat: no-repeat;
@@ -48,30 +48,20 @@ body {
 
 
   /*css for particles*/
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 body {
     /* overflow-x: hidden;   */
     background-image: url("landing_page_wo_logo\ \(1\).png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color: blanchedalmond;
+    font-family: "Quicksand", sans-serif;
     
   }
-  html{
-    scroll-behavior: smooth ;  
-    transition: ease .3s;
-  }
+ 
  
           /*NAVBAR CSS*/
           
-  html,
-  body {
-      font-family: "Quicksand", sans-serif;
-      font-size: 20px;
-      font-size: 10px;
-  }
+  
   /* Navbar section */
   
 
@@ -117,7 +107,7 @@ body {
     text-decoration: none;
     color:  rgb(3, 168, 245);
     line-height: 65px;
-    font-size: 2.4rem;
+    font-size: 25px;
 }
 
 .nav div.main_list ul li a:hover {
@@ -142,11 +132,7 @@ body {
 
 /* Media qurey section */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        /* margin: 0; */
-    }
-}
+
 
 @media screen and (max-width:768px) {
     .navTrigger {
@@ -181,7 +167,7 @@ body {
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 3rem;
+        font-size: 25px;
         padding: 20px;
     }
     .nav div.media_button {
@@ -380,23 +366,10 @@ body {
 
 .affix {
     padding: 0;
-    background-color: #111;
+    background-color: rgba(1,1,1)
 }
 
-.myH2 {
-    text-align:center;
-    font-size: 4rem;
-}
-.myP {
-    text-align: justify;
-    padding-left:15%;
-    padding-right:15%;
-    font-size: 20px;
-}
-@media all and (max-width:700px){
-    .myP {
-        padding:2%;}
-}
+
         /*CSS FOR SCROLL BAR*/
         /* width */
 ::-webkit-scrollbar {
@@ -421,7 +394,7 @@ body {
  
   /*CSS FOR TIMER*/
   #timer {  
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 900;
     color: white;
     text-shadow: 0 0 20px #48C8FF;
@@ -446,7 +419,7 @@ body {
         
          #timer
          {
-             font-size: 5em;
+             font-size: 3em;
              margin-left:100;
          }
          .nav
@@ -457,7 +430,6 @@ body {
             padding-left: 25%;
             width: 50%;
         }
-         
       }
 
   /* top stuff */
@@ -484,6 +456,7 @@ body {
         margin-left: 1%;
         margin-bottom: 30%;
     }
+
     .logomain{
         width: 100%;
         height:50%;
@@ -505,12 +478,10 @@ body {
 /* domains */
 
 .cardBox {
-    font-size: 1.2em;
+    font-size: 10px;
     margin: 1% 0 0 1%;
     perspective: 800px;
     width: 30.7%;
-    /* backface-visibility: hidden; */
-
   }
   
   .cardBox:hover .card {
@@ -526,10 +497,7 @@ body {
     transition: transform 0.4s ease 0s;
     width: 80%;
     border-radius: 30px;
-    /* backface-visibility: hidden; */
-
   }
-
   @-moz-document url-prefix() {
     .card {
         background:rgba(67, 76, 82, 0.37);
@@ -545,7 +513,6 @@ body {
 }
   
   .card .front{
-      
     backface-visibility: hidden;
     box-sizing: border-box;
     color: white;
@@ -553,7 +520,6 @@ body {
     font-size: 4em;
     height: 100%;
     padding-top: 35%;
-    font-size: x-large;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -563,7 +529,7 @@ body {
     box-sizing: border-box;
     color: white;
     display: block;
-    font-size: 150%;
+    font-size: 20px;
     height: 100%;
     padding: 0.8em;
     position: absolute;
@@ -575,7 +541,7 @@ body {
     background: #fff;
     border-radius: 100%;
     color: #222;
-    font-size: 1.5em;
+    font-size: 12px;
     line-height: 30px;
     padding: 0 7px 4px 6px;
   }
@@ -590,7 +556,7 @@ body {
     color: #fff;
     text-decoration: none;
     border-radius: 1px;
-    font-size: 0.9em;
+    font-size: 12px;
     transition: all 0.2s ease 0s;
   }
 
@@ -650,7 +616,7 @@ body {
 .gallery-box__img-container {
     display: block;
     width: 135%;
-    height: 350px;
+    height: 290px;
     background:grey;
     border-radius: 0 0 40px 40px;
     transform: rotate(25deg);
@@ -693,7 +659,7 @@ body {
 }
 .gallery-box__text {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 20px;
     padding: 8px 0;
     box-decoration-break: clone;
     line-height: 2;
@@ -701,7 +667,7 @@ body {
 }
 @media screen and (max-width: 900px) {
     .gallery-box__text {
-        font-size: 20px;
+        font-size: 25px;
    }
    .gallery-box .gallery-box__img-container {
     width: 110%;
@@ -779,13 +745,13 @@ ul.social-icons {
     text-decoration: none;
 }
 .fa-facebook {
-    padding:8px 12px;
+    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color:black;
     border-radius: 350px;
 }
 .fa-facebook:hover {
@@ -798,7 +764,7 @@ ul.social-icons {
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: black;
     border-radius: 350px;
 }
 .fa-twitter:hover {
@@ -806,52 +772,52 @@ ul.social-icons {
 }
 
 .fa-youtube {
-    padding:10px 14px;
+    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: black;
     border-radius: 350px;
 }
 .fa-youtube:hover {
     background-color: #e64a41;
 }
 .fa-linkedin {
-    padding:10px 14px;
+    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: black;
     border-radius: 350px;
 }
 .fa-linkedin:hover {
     background-color: #0073a4;
 }
 .fa-github {
-    padding:10px 14px;
+    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: black;
     border-radius: 350px;
 }
 .fa-github:hover {
     background-color: #5a32a3;
 }
 .fa-instagram {
-    padding:10px 14px;
+    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: black;
     border-radius: 350px;
 }
 .fa-instagram:hover {
@@ -866,7 +832,7 @@ ul.social-icons {
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
+    box-shadow: inset 0 0 5px black;
     border-radius: 1px;
   }
   
@@ -882,7 +848,7 @@ ul.social-icons {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
+ 
     margin: 0 auto;
 }
 .sponsorc{
@@ -999,7 +965,7 @@ h4
 .timeline ul li .time h4{
   margin:0;
   padding:0;
-  font-size:14px;
+  font-size:25px;
 }
 .timeline ul li:nth-child(odd) .time
 {
@@ -1069,39 +1035,3 @@ h4
   }
 }
 /* faq */
-.FAQs{
-    position: relative;
-    margin: 0 10vw 0 10vw;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-}
-.accordion {
-background-color: #1512ac;
-color: rgb(255, 255, 255);
-cursor: pointer;
-padding: 18px;
-width: 100%;
-border: none;
-text-align: left;
-outline: none;
-font-size: 15px;
-transition: 1s;
-margin: .25%;
-}
-
-.active, .accordion:hover {
-background-color: #101777; 
-color: white;
-}
-
-.panel {
-padding: 0 18px;
-display: none;
-font-size: 15px;
-background:rgb(0, 44, 240);
-
-overflow: hidden;
-margin: .25%;
-transition: 1s;
-
-}
