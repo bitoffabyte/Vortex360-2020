@@ -583,7 +583,7 @@ body {
     }
   }
   
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 900px) {
     .cardBox {
       width: 94.5%;
     }
