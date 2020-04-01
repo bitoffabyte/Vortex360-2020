@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <title>Document</title>
 </head>
 <body>
@@ -38,9 +38,9 @@
 
 
 <div class="front-contx">
-    <img src="Vortex_360_logo_white.png" class = "logomain" alt="">
+    <img src="assets/Vortex_360_logo_white.png" class = "logomain" alt="">
     <div id="timer"></div><br><br><br>
-    <a href="https://devfolio.co/signin" target="_blank"><img src="register_button_black (2).png" class="reg" alt=""></a>
+    <a href="https://devfolio.co/signin" target="_blank"><img src="assets/register_button_black (2).png" class="reg" alt=""></a>
 </div>
 <p id="about"></p>
 <div class="card-content">
@@ -64,7 +64,7 @@
 <div class="card">
   <div class="front">
     <p>HEALTHCARE</p>
-      <img src="dd.png" alt="">
+      <!-- <img src="dd.png" alt=""> -->
   </div>
   <div class="back">
     <h1> Healthcare</h1>
@@ -76,7 +76,7 @@
 <div class="card">
   <div class="front">
     <p>DEFENCE</p>
-      <img src="dd.png" alt="">
+      <!-- <img src="dd.png" alt=""> -->
   </div>
   <div class="back">
     <h1>DEFENCE</h1>
@@ -88,7 +88,7 @@
 <div class="card">
   <div class="front">
     <p>SPACE</p>
-      <img src="dd.png" alt="">
+      <!-- <img src="dd.png" alt=""> -->
   </div>
   <div class="back">
     <h1>SPACE</h1>
@@ -100,7 +100,7 @@
 <div class="card">
   <div class="front">
     <p>AGRICULTURE</p>
-      <img src="dd.png" alt="">
+      <!-- <img src="dd.png" alt=""> -->
   </div>
   <div class="back">
     <h1>AGRICULTURE</h1>
@@ -112,7 +112,7 @@
 <div class="card">
   <div class="front">
     <p>COMMUNITY HELP</p>
-      <img src="dd.png" alt="">
+      <!-- <img src="dd.png" alt=""> -->
   </div>
   <div class="back">
     <h1>COMMUNITY HELP</h1>
@@ -124,7 +124,7 @@
 <div class="card">
   <div class="front">
     <p>OPEN INNOVATION</p>
-      <img src="dd.png" alt="">
+      <!-- <img src="dd.png" alt=""> -->
   </div>
   <div class="back">
     <h1>OPEN INNOVATION</h1>
@@ -563,19 +563,19 @@
       </div>
     </div>
   </div>
-  <div class="rules-btn"><a target="_blank" href="Rules.pdf" download><button  style=" background:transparent;color: whitesmoke; font-size: 30px; text-align: center; margin: 10px; border-radius: 10px; cursor: pointer;" class = "btn">Download Rules</button></a></div>
+  <div class="rules-btn"><a target="_blank" href="assets/Rules.pdf" download><button  style=" background:transparent;color: whitesmoke; font-size: 30px; text-align: center; margin: 10px; border-radius: 10px; cursor: pointer;" class = "btn">Download Rules</button></a></div>
 </div>
 
 <div class="sponsors card-content">
   <div class= 'sponsorc'>
     <p style="color: whitesmoke; font-size: 45px; text-align: center; margin: 10px;"> Organized By</p>
 
-  <img src="RoboVITics Logo.png" class = "image"alt="">
+  <img src="assets/RoboVITics Logo.png" class = "image"alt="">
   </div>
   <div class = 'sponsorc'>
     <p  style="color: whitesmoke; font-size: 45px; text-align: center; margin: 10px; padding-bottom: 130px; ">Powered By</p>
 
-  <img class = "image" src="autodesk_logo_grayscale_final_small.png" alt="" style="position: relative; top:-60px;" >
+  <img class = "image" src="assets/autodesk_logo_grayscale_final_small.png" alt="" style="position: relative; top:-60px;" >
   </div>
 </div>
 
@@ -592,188 +592,13 @@
    </ul>
   <h1 style="text-align: center; color: white;">Contact Us</h1>
   <p style="font-weight: 600;font-size: medium;">Email : roboviticsvitvellore@gmail.com</p>
-  <p style=" text-align:right; margin-right: 20px;" ><img src="with_love.png" alt=""></p>
+  <p style=" text-align:right; margin-right: 20px;" ><img src="assets/with_love.png" alt=""></p>
 </div>
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<script>
-    $(window).scroll(function() {
-        if ($(document).scrollTop() > 50) {
-            $('.nav').addClass('affix');
-            console.log("OK");
-        } else {
-            $('.nav').removeClass('affix');
-        }
-    });
-    $('.navTrigger').click(function () {
-$(this).toggleClass('active');
-console.log("Clicked menu");
-$("#mainListDiv").toggleClass("show_list");
-$("#mainListDiv").fadeIn();
-
-});
-
-</script>
-    <!-- faq -->
-    <script>
-     const toggles = document.querySelectorAll('.faq-toggle');
-
-toggles.forEach(toggle => {
-	toggle.addEventListener('click', () => {
-		toggle.parentNode.classList.toggle('active');
-	});
-});
-
-      
-      
-      </script>
-    <script>
-        function updateTimer() {
-          future  = Date.parse("May 01, 2020 11:30:00");
-          now     = new Date();
-          diff    = future - now;
-        
-          days  = Math.floor( diff / (1000*60*60*24) );
-          hours = Math.floor( diff / (1000*60*60) );
-          mins  = Math.floor( diff / (1000*60) );
-          secs  = Math.floor( diff / 1000 );
-        
-          d = days;
-          h = hours - days  * 24;
-          m = mins  - hours * 60;
-          s = secs  - mins  * 60;
-        
-          document.getElementById("timer")
-            .innerHTML =
-              '<div>' + d + '<span>days</span></div>' +
-              '<div>' + h + '<span>hours</span></div>' +
-              '<div>' + m + '<span>minutes</span></div>' +
-              '<div>' + s + '<span>seconds</span></div>' ;
-             
-        }
-        setInterval('updateTimer()', 1000 );
-        
-            </script>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!-- button -->
-<script>
-  function myFunction() {
-    alert("Coming Soon!");
-  }
-  </script>
-<script>
-    /* ---- particles.js config ---- */
+<script src="Js/index.js"></script>
 
-particlesJS("particles-js", {
-"particles": {
-"number": {
-  "value": 40,
-  "density": {
-    "enable": true,
-    "value_area": 800
-  }
-},
-"color": {
-  "value": "#ffffff"
-},
-"shape": {
-  "type": "circle",
-  "stroke": {
-    "width": 0,
-    "color": "#000000"
-  },
-  "polygon": {
-    "nb_sides": 7
-  },
-  "image": {
-    "src": "img/github.svg",
-    "width": 100,
-    "height": 100
-  }
-},
-"opacity": {
-  "value": 0.5,
-  "random": false,
-  "anim": {
-    "enable": false,
-    "speed": 1,
-    "opacity_min": 0.1,
-    "sync": false
-  }
-},
-"size": {
-  "value": 3,
-  "random": true,
-  "anim": {
-    "enable": false,
-    "speed": 40,
-    "size_min": 0.1,
-    "sync": false
-  }
-},
-"line_linked": {
-  "enable": true,
-  "distance": 150,
-  "color": "#ffffff",
-  "opacity": 0.4,
-  "width": 1
-},
-"move": {
-  "enable": true,
-  "speed": 3,
-  "direction": "none",
-  "random": false,
-  "straight": false,
-  "out_mode": "out",
-  "bounce": false,
-  "attract": {
-    "enable": false,
-    "rotateX": 600,
-    "rotateY": 1200
-  }
-}
-},
-"interactivity": {
-"detect_on": "canvas",
-"events": {
-  "onhover": {
-    "enable": true,
-    "mode": "grab"
-  },
-  "onclick": {
-    "enable": true,
-    "mode": "push"
-  },
-  "resize": true
-},
-"modes": {
-  "grab": {
-    "distance": 140,
-    "line_linked": {
-      "opacity": 1
-    }
-  },
-  "bubble": {
-    "distance": 400,
-    "size": 40,
-    "duration": 2,
-    "opacity": 8,
-    "speed": 3
-  },
-  "repulse": {
-    "distance": 200,
-    "duration": 0.4
-  },
-  "push": {
-    "particles_nb": 4
-  },
-  "remove": {
-    "particles_nb": 2
-  }
-}
-},
-"retina_detect": true
-});
-</script>
 </body>
 </html>
