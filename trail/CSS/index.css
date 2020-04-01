@@ -453,6 +453,11 @@ body {
 
     
   }
+  .rewardlogo{
+    width: 70%;
+    height: auto;
+
+  }
   .front-contx{
     margin-left: 17%;
     margin-top: 5%;
@@ -474,6 +479,10 @@ body {
         height:50%;
         padding-left: 0%;
     }
+    .rewardlogo{
+        width: 100%;
+    
+      }
 }
 /* Cards general*/
 .card-content{
