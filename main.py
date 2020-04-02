@@ -11,7 +11,7 @@ def hack():
 	return render_template('vortex.html')
 
 @app.route('/Vortex360')
-def hack():
+def hack1():
 	return render_template('vortex.html')
 
 @app.errorhandler(404)
