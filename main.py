@@ -10,6 +10,10 @@ def defaul():
 def hack():
 	return render_template('vortex.html')
 
+@app.route('/Vortex360')
+def hack():
+	return render_template('vortex.html')
+
 @app.errorhandler(404)
 def page_not_found(e):
 	return redirect('/')
