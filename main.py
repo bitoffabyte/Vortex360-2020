@@ -6,7 +6,7 @@ app=Flask(__name__)
 def defaul():
 	return render_template('index.html')
 	
-@app.route('/hack')
+@app.route('/Vortex360/')
 def hack():
 	return render_template('vortex.html')
 
