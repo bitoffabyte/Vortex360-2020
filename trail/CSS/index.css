@@ -40,7 +40,7 @@ body {
   #particles-js {
     position: absolute;
     width: 100vw;
-    height: 1020vh;
+    height: 1220vh;
     background-color: black;
     background-image: url("");
     background-repeat: no-repeat;
@@ -454,8 +454,10 @@ body {
     
   }
   .rewardlogo{
-    width: 70%;
-    height: auto;
+    width: 20%;
+    height: 20%;
+    position: relative;
+
 
   }
   .front-contx{
