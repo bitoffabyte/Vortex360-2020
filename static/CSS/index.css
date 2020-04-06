@@ -1168,19 +1168,21 @@ h4
 
  }
 
+ .rules-btn{
+    margin-left: 41%;
+}
  @media screen and (max-width: 767px)
  {
      .myDiv
      {
          flex-direction: column;
      }
+
  } 
-.rules-btn{
-    margin-left: 41%;
-}
-@media screen and (max-width: 767px)
+@media screen and (max-width: 667px)
 {
     .rules-btn{
         margin-left: 19%;
     }
 } 
+
