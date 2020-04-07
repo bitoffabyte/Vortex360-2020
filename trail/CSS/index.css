@@ -602,7 +602,7 @@ body {
 /* Judge cards */
 .jimage
 {
-    width: 100%;
+    width: 80%;
     height:70%;
     display: block;
     margin-left: auto;
