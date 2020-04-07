@@ -633,10 +633,14 @@ body {
         flex: 0 1 calc(50% - 15px);
         margin: 15px 0;
    }
+   .jimage
+   {
+       height: 75%;
+   }
 }
 @media screen and (max-width: 640px) {
     .gallery-box {
-        height: 500px;
+        height: 600px;
         flex: 0 1 calc(100% - 15px);
    }
 }
@@ -661,11 +665,11 @@ body {
     .gallery-box__text {
 
         font-size: 25px;
-        top: -50px;
+        
    }
    .gallery-box  {
     width: 110%;
-    height: 450px;
+    height: 600px;
     border-radius: 0;
    
 }
@@ -675,11 +679,13 @@ body {
    
 }
 .gallery-box .gallery-box__text-wrapper {
-    top:150
+    top:250
     position: relative;
     
 }
+
 }
+
 
 
   /* Bottom footer */
