@@ -39,7 +39,7 @@ body {
     #particles-js {
     position: absolute;
     width: 100vw;
-    height: 1120vh;
+    height: 1020vh;
     background-color: black;
     background-image: url("");
     background-repeat: no-repeat;
@@ -49,15 +49,7 @@ body {
 
   @media screen and (max-width:900px) {
     #particles-js {
-        height: 620vh;
-      } 
-}
-
-
-@media screen and (max-width:1743px) {
-
-    #particles-js {
-        height: 720vh;
+        height: 520vh;
       } 
 }
 
