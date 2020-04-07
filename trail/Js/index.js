@@ -27,7 +27,7 @@ toggles.forEach(toggle => {
 
 //timer
 function updateTimer() {
-    future  = Date.parse("May 01, 2020 11:30:00");
+    future  = Date.parse("May 05, 2020 11:30:00");
     now     = new Date();
     diff    = future - now;
   
