@@ -501,7 +501,7 @@ body {
 /* domains */
 
 .cardBox {
-    font-size: 10px;
+    font-size: 65%;
     margin: 1% 0 0 1%;
     perspective: 800px;
     width: 30.7%;
