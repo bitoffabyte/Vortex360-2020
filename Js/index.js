@@ -45,8 +45,8 @@ function updateTimer() {
       .innerHTML =
         '<div>' + d + '<span>days</span></div>' +
         '<div>' + h + '<span>hours</span></div>' +
-        '<div>' + m + '<span>minutes</span></div>' +
-        '<div>' + s + '<span>seconds</span></div>' ;
+        '<div>' + m + '<span>mins</span></div>' +
+        '<div>' + s + '<span>secs</span></div>' ;
        
   }
   setInterval('updateTimer()', 1000 );
