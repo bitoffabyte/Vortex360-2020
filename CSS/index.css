@@ -409,12 +409,12 @@ body {
     color: white;
     text-shadow: 0 0 20px #48C8FF;
     left: 0%;
-    padding-left: 25%;
+    padding-left: 23%;
   }
     
     div {
       display: inline-block;
-      min-width: 100px;
+      min-width: 120px;
     }
       
       span {

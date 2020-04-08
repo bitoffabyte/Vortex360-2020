@@ -40,6 +40,9 @@ function updateTimer() {
     h = hours - days  * 24;
     m = mins  - hours * 60;
     s = secs  - mins  * 60;
+    if (s<10) {
+      s="0"+s;
+    }
   
     document.getElementById("timer")
       .innerHTML =
