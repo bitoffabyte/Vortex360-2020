@@ -467,9 +467,9 @@ body {
     position: relative;
 
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 500px) {
     .front-contx{
-        padding-top: 30%;
+        padding-top: 50%;
         margin-left: 1%;
         margin-bottom: 30%;
     }
@@ -478,6 +478,7 @@ body {
         width: 100%;
         height:50%;
         padding-left: 0%;
+        padding-top:35% ;
     }
     .rewardlogo{
         width: 100%;
@@ -557,6 +558,32 @@ body {
     text-align: center;
     width: 100%;
   }
+
+/* hide back of pane during swap */
+.card .front, .card .back {
+ -webkit-backface-visibility: hidden;
+         backface-visibility: hidden;
+ -webkit-transition: 0.6s;
+         transition: 0.6s;
+ -webkit-transform-style: preserve-3d;
+         transform-style: preserve-3d;
+ position: absolute;
+ top: 0;
+ left: 0;
+ }
+
+ /*  UPDATED! front pane, placed above back */
+.card .front {
+ z-index: 2;
+ -webkit-transform: rotateY(0deg);
+         transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.card.back {
+ -webkit-transform: rotateY(-180deg);
+         transform: rotateY(-180deg);
+}
   
   .card .front strong {
     background: #fff;
