@@ -180,7 +180,7 @@ particlesJS("particles-js", {
 document.addEventListener('DOMContentLoaded', function () {
   let devfolioOptions = {
       buttonSelector: '#devfolio-apply-now',
-      key: 'myhackathonkey',
+      key: 'vortex360',
   }
 
   let script = document.createElement('script');
