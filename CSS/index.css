@@ -12,6 +12,9 @@ body {
     user-select: none;
     
   }
+  .everything{
+      position: relative;
+  }
   .domainscard{
       margin-top: 0!important;
   }
@@ -40,9 +43,9 @@ body {
   
   /* ---- particles.js container ---- */
     #particles-js {
-    position: absolute;
-    width: 100vw;
-    height: 1020vh;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background-color: black;
     background-image: url("");
     background-repeat: no-repeat;
