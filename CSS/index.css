@@ -12,6 +12,9 @@ body {
     user-select: none;
     
   }
+  .domainscard{
+      margin-top: 0!important;
+  }
   .card-content{
       z-index:0;
       position: relative;
@@ -487,14 +490,16 @@ body {
 }
 /* Cards general*/
 .card-content{
-    margin-top: 13%;
+    /* margin-top: 13%; */
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     /* margin-left: 30%; */
 }
-
+.info-cont{
+    margin-top: 15%;
+}
 
 
 /* domains */
