@@ -417,7 +417,13 @@ body {
     left: 0%;
     padding-left: 23%;
   }
-    
+    #timer p{
+        font-size: 100%;
+        padding: 0;
+        margin: 0;
+        font-weight: 100;
+        font-family: "Quicksand", sans-serif;
+    }
     div {
       display: inline-block;
       min-width: 120px;
@@ -438,6 +444,11 @@ body {
              font-size: 3em;
              margin-left:100;
          }
+         #timer p{
+            font-size: 90%;
+            margin-left: -15%;
+            text-align: left;
+        }
          .nav
          {
              text-align: left;
