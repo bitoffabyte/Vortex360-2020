@@ -49,9 +49,13 @@ function updateTimer() {
   if (h<10) {
     h="0"+h;
   }
+  if (d<10) {
+    d="0"+d;
+  }
 
   document.getElementById("timer")
     .innerHTML =
+      '<p>Hack begins in</p>'+
       '<div>' + d + '<span>days</span></div>' +
       '<div>' + h + '<span>hours</span></div>' +
       '<div>' + m + '<span>minutes</span></div>' +

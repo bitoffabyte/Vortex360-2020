@@ -12,6 +12,12 @@ body {
     user-select: none;
     
   }
+  .everything{
+      position: relative;
+  }
+  .domainscard{
+      margin-top: 0!important;
+  }
   .card-content{
       z-index:0;
       position: relative;
@@ -37,9 +43,9 @@ body {
   
   /* ---- particles.js container ---- */
     #particles-js {
-    position: absolute;
-    width: 100vw;
-    height: 1020vh;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background-color: black;
     background-image: url("");
     background-repeat: no-repeat;
@@ -411,7 +417,13 @@ body {
     left: 0%;
     padding-left: 23%;
   }
-    
+    #timer p{
+        font-size: 100%;
+        padding: 0;
+        margin: 0;
+        font-weight: 100;
+        font-family: "Quicksand", sans-serif;
+    }
     div {
       display: inline-block;
       min-width: 120px;
@@ -432,6 +444,11 @@ body {
              font-size: 3em;
              margin-left:100;
          }
+         #timer p{
+            font-size: 90%;
+            margin-left: -15%;
+            text-align: left;
+        }
          .nav
          {
              text-align: left;
@@ -487,14 +504,16 @@ body {
 }
 /* Cards general*/
 .card-content{
-    margin-top: 13%;
+    /* margin-top: 13%; */
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     /* margin-left: 30%; */
 }
-
+.info-cont{
+    margin-top: 15%;
+}
 
 
 /* domains */
@@ -746,7 +765,7 @@ ul {
     width:auto;
     display:block;
     margin: 0 auto;
-    background: #322f3000;
+    background: #000000;
     color: #fff;
     height: 320px;
 text-align: center;
@@ -767,7 +786,7 @@ ul.social-icons {
     text-decoration: none;
 }
 .fa-facebook {
-    padding:10px 12px;
+    padding:10px 17px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
