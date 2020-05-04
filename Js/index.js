@@ -55,7 +55,7 @@ function updateTimer() {
 
   document.getElementById("timer")
     .innerHTML =
-      // '<p>Hack begins in</p>'+
+      '<p>Hack begins in</p>'+
       '<div>' + d + '<span>days</span></div>' +
       '<div>' + h + '<span>hours</span></div>' +
       '<div>' + m + '<span>minutes</span></div>' +
