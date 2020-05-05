@@ -27,7 +27,7 @@ toggle.addEventListener('click', () => {
 
 //timer
 function updateTimer() {
-  future  = Date.parse("May 05, 2020 11:30:00");
+  future  = Date.parse("June 05, 2020 10:00:00");
   now     = new Date();
   diff    = future - now;
 
