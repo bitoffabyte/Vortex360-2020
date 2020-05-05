@@ -88,7 +88,7 @@ body {
     position: fixed;
     line-height: 65px;
     text-align: center;
-    z-index: 99;
+    z-index: 80;
 }
 
 .nav div.logo {
@@ -1253,7 +1253,7 @@ h4
     font-weight: 600;
     padding: 12px 20px;
     text-align: center;
-    text-transform: lowercase;
+    
 }
 
 #devfolio-apply-now:not([disabled]) {
@@ -1270,3 +1270,130 @@ h4
         margin-left: 20%;
     } 
 }
+/*pop-up*/
+#myImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: relative; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    margin-left: auto;
+    margin-right: auto;
+    top:60px;
+    width: 80%; 
+    height: 500px;
+    border-radius: 20px;
+    background:rgba(67, 76, 82, 0.37);
+    overflow: auto;
+    padding-bottom: 50px;
+  }
+  .modal::-webkit-scrollbar {
+    display: none;
+}
+  
+  
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+  /* Add Animation */
+   #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    
+    top: 15px;
+    padding-left:90%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /*pop up images*/
+  .prize
+  {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .prizeimg
+  {
+    height: 150px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pri
+  {
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .prizeimg1
+  {
+    height: 80px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    
+    .prizeimg
+    {
+      height: 90px;
+    }
+    .pri
+    {
+      flex-direction: column;
+    }
+
+  }
+  
