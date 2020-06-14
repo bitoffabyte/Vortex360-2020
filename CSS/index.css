@@ -1300,10 +1300,28 @@ h4
     display: none;
 }
   
+.modal1 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  margin-left: auto;
+  margin-right: auto;
+  top:60px;
+  width: 80%; 
+  height: 500px;
+  left: 10%;
+  border-radius: 20px;
+  background:rgb(19, 22, 24);
+  overflow: auto;
+  padding-bottom: 50px;
+}
+.modal1::-webkit-scrollbar {
+  display: none;
+}
   
   
   /* Caption of Modal Image */
-  #caption {
+  #caption,#caption1 {
     margin: auto;
     display: block;
     width: 80%;
@@ -1315,7 +1333,7 @@ h4
   }
   
   /* Add Animation */
-   #caption {  
+   #caption,#caption1 {  
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -1333,7 +1351,7 @@ h4
   }
   
   /* The Close Button */
-  .close {
+  .close,.closew {
     
     top: 15px;
     padding-left:90%;
@@ -1346,12 +1364,15 @@ h4
   }
   
   .close:hover,
-  .close:focus {
+  .close:focus,.closew:hover,.closew:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
   }
   
+  #winners-popup{
+    cursor: pointer;
+  }
   /*pop up images*/
   .prize
   {

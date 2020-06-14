@@ -223,3 +223,20 @@ span1.onclick = function() {
   modal.style.display = "none";
   img.style.display="block";
 }
+
+
+var modal1 = document.getElementById("myModal1");
+var captionText1 = document.getElementById("caption1");
+var win = document.querySelector('#winners-popup')
+
+win.onclick = function(){
+  modal1.style.display = "block";
+  captionText.innerHTML = this.alt;
+}
+
+var span11 = document.querySelector(".closew");
+
+span11.onclick = function() { 
+  modal1.style.display = "none";
+  console.log("sds")
+}
