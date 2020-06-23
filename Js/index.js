@@ -56,10 +56,10 @@ function updateTimer() {
   document.getElementById("timer")
     .innerHTML =
       '<p>HACK ENDS IN</p>'+
-      '<div>' + d + '<span>days</span></div>' +
-      '<div>' + h + '<span>hours</span></div>' +
-      '<div>' + m + '<span>minutes</span></div>' +
-      '<div>' + s + '<span>seconds</span></div>' ;
+      '<div>' + 0 + '<span>days</span></div>' +
+      '<div>' + 0 + '<span>hours</span></div>' +
+      '<div>' + 0 + '<span>minutes</span></div>' +
+      '<div>' + 0 + '<span>seconds</span></div>' ;
      
 }
 setInterval('updateTimer()', 1000 );
