@@ -539,6 +539,7 @@ body {
     width: 80%;
     border-radius: 30px;
   }
+  
   @-moz-document url-prefix() {
     .card {
         background:rgba(67, 76, 82, 0.37);
@@ -641,7 +642,10 @@ body {
       margin-bottom: 3%;
     }
   }
-  
+  .gap
+  {
+    display: none;
+  }
   @media screen and (max-width: 900px) {
     .cardBox {
       width: 94.5%;
@@ -649,7 +653,160 @@ body {
     .card {
       height: 400px;
     }
+    .gap{
+      display: block;
+    }
   }
+  /*prizes card*/
+  
+.card-content1{
+  /* margin-top: 13%; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  /* margin-left: 30%; */
+}
+.info-cont1{
+  margin-top: 15%;
+}
+
+
+/* domains */
+
+.cardBox1 {
+  font-size: 65%;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  width: 30.7%;
+}
+
+.cardBox1:hover .card1 {
+  transition: 1s;
+  transform: rotateY( 180deg);
+}
+/*changes*/
+.card1 {
+  background:rgba(67, 76, 82, 0);
+  cursor: default;
+  height: 350px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+  width: 80%;
+  border-radius: 30px;
+}
+
+@-moz-document url-prefix() {
+  .card1 {
+      background:rgba(67, 76, 82, 0.37);
+      cursor: default;
+      height: 350px;
+      transform-style: preserve-3d;
+      transition: transform 0.4s ease 0s;
+      width: 80%;
+      border-radius: 30px;
+      backface-visibility: hidden;
+  
+    }
+}
+
+.card1 .front1{
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 4em;
+  height: 100%;
+  padding-top: 35%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.card1 .back1 {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-size: 20px;
+  height: 100%;
+  padding: 0.8em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* hide back of pane during swap */
+.card1 .front1, .card1 .back1 {
+-webkit-backface-visibility: hidden;
+       backface-visibility: hidden;
+-webkit-transition: 0.6s;
+       transition: 0.6s;
+-webkit-transform-style: preserve-3d;
+       transform-style: preserve-3d;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+/*  UPDATED! front pane, placed above back */
+.card1 .front1 {
+z-index: 2;
+-webkit-transform: rotateY(0deg);
+       transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.card1.back1 {
+-webkit-transform: rotateY(-180deg);
+       transform: rotateY(-180deg);
+}
+
+.card1 .front1 strong {
+  background: #fff;
+  border-radius: 100%;
+  color: #222;
+  font-size: 12px;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+
+.card1 .back1 {
+  transform: rotateY( 180deg);
+}
+
+.card1 .back1 a {
+  padding: 0.3em 0.5em;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 12px;
+  transition: all 0.2s ease 0s;
+}
+
+
+@media screen and (max-width: 767px) {
+  .cardBox1 {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card1 {
+    height: 500px;
+  }
+  .cardBox1:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cardBox1 {
+    width: 94.5%;
+  }
+  .card1 {
+    height: 400px;
+  }
+}
 /* Judge cards */
 .jimage
 {
