@@ -9,7 +9,7 @@ let numberOfPieces = 50;
 let lastUpdateTime = Date.now();
 
 function randomColor () {
-    let colors = ['#f00', '#0f0', '#00f', '#0ff', '#f0f', '#ff0'];
+    let colors = ['#F24d4d', '#86ea86', '#6e6eee', '#82c7c7', '#F0a7f0', '#6e6eee'];
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
